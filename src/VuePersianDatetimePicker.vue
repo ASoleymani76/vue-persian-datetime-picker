@@ -271,12 +271,16 @@
                                     class="vpd-day-effect"
                                     :style="{ 'background-color': color }"
                                   />
-                                  <span
-                                    class="vpd-day-text"
-                                    v-text="
-                                      convertToLocaleNumber(day.formatted)
-                                    "
-                                  />
+                                  <div
+                                    style="display: flex;flex-direction: column;justify-content: center;"
+                                  >
+                                    <span
+                                      class="vpd-day-text"
+                                      v-text="
+                                        convertToLocaleNumber(day.formatted)
+                                      "
+                                    />
+                                  </div>
                                 </slot>
                               </template>
                             </div>
